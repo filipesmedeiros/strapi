@@ -21,6 +21,10 @@ const SelectRoles = ({ error, isDisabled, name, onChange, value }) => {
       { id: 2, name: 'Author' },
       { id: 3, name: 'Editor' },
       { id: 4, name: 'Soup' },
+      { id: 11, name: 'Super Admin1' },
+      { id: 21, name: 'Author1' },
+      { id: 31, name: 'Editor1' },
+      { id: 41, name: 'Soup1' },
     ]);
   }, []);
 
@@ -42,6 +46,7 @@ const SelectRoles = ({ error, isDisabled, name, onChange, value }) => {
         isClearable
         isDisabled={isDisabled}
         isMulti
+        // menuIsOpen
         options={options}
         styles={styles}
         value={value}
